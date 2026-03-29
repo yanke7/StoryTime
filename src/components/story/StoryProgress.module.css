@@ -1,0 +1,52 @@
+.track {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cover {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+  flex-shrink: 0;
+  animation: bounce-in 0.5s ease-out;
+}
+
+.coverPlaceholder {
+  font-size: 2rem;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.current {
+  background: var(--coral);
+  width: 12px;
+  height: 12px;
+  animation: float 2s ease-in-out infinite;
+}
+
+.visited {
+  background: var(--mint);
+  opacity: 0.8;
+}

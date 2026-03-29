@@ -1,0 +1,14 @@
+.text {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  line-height: 1.8;
+  color: var(--ink);
+  font-weight: 600;
+  min-height: 80px;
+}
+
+.cursor {
+  display: inline-block;
+  animation: twinkle 0.6s step-end infinite;
+  color: var(--coral);
+  margin-left: 1px;
+}

@@ -1,0 +1,21 @@
+.frame {
+  display: flex;
+  width: 100%;
+  max-width: 860px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow), 0 2px 0 rgba(255,255,255,0.8) inset;
+  overflow: hidden;
+}
+
+.spine {
+  width: 12px;
+  background: linear-gradient(180deg, var(--lavender) 0%, var(--mint) 100%);
+  flex-shrink: 0;
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.page {
+  flex: 1;
+  padding: clamp(20px, 4vw, 48px);
+}

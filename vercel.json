@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/generate-story-start.js": { "maxDuration": 30 },
+    "api/generate-story-continue.js": { "maxDuration": 30 },
+    "api/generate-image.js": { "maxDuration": 20 }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
